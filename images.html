@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>images</title>
+    <style>
+      body {
+        background-color: #050205;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://images.pexels.com/photos/1402923/pexels-photo-1402923.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      width="400"
+      alt="image is loaded"
+    />
+    <!-- code right claim aa jata hai ese koi bhi images free mai bhi ni militi kuch log hai jo log free mai image dete jese unplash credit de skte pixels se bhi le skte hai  -->
+    <!-- local image -->
+    <img src="./HYE_GUYSS.jpeg" width="400" alt="image is loaded" />
+    <!-- image hai phir pictures tag kyu use krna isme source tag bhi use padhta hai source self closing element hai srcset attribute-->
+    <picture>
+        <source media="(min-width: 650px)" srcset="./gatito.jpeg"/>
+        <source media="(min-width: 460px)" srcset="./gatito.jpeg"/>
+        <img src="./HYE_GUYSS.jpeg" alt="">
+    </picture>
+
+    <!-- read this https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture -->
+
+    <!-- image map genrator ke baare mai padhan hai nice bhot mst chiz hai -->
+  </body>
+</html>
